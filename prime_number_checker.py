@@ -1,5 +1,3 @@
-app_start = True
-
 # Function to validate user input
 def check_user_input(user_input):
     if not user_input.isdigit():  # Validate if input is a digit
@@ -23,7 +21,7 @@ def is_prime_number(num):
 
 
 # --- Start the App ---
-while app_start:
+while True:
     user_input = input("Enter a number to check if prime or not? ")
     valid_input = check_user_input(user_input)
     if valid_input is not False:
